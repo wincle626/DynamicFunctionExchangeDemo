@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="shift_right_slow_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test01/PR_Test01.runs/shift_right_slow_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="shift_left_slow_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test01/PR_Test01.runs/shift_left_slow_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test01/PR_Test01.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream">
+		<Parent Id="shift_right_slow_synth_1"/>
+		<Parent Id="shift_left_slow_synth_1"/>
+	</Run>
+	<Run Id="child_0_impl_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test01/PR_Test01.runs/child_0_impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream">
+		<Parent Id="shift_right_slow_synth_1"/>
+		<Parent Id="shift_left_slow_synth_1"/>
+	</Run>
+	<Run Id="child_1_impl_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test01/PR_Test01.runs/child_1_impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="shift_right_slow_synth_1"/>
+		<Parent Id="shift_left_slow_synth_1"/>
+	</Run>
+	<Run Id="child_2_impl_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test01/PR_Test01.runs/child_2_impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="shift_right_slow_synth_1"/>
+		<Parent Id="shift_left_slow_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

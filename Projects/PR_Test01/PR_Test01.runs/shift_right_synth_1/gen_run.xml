@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="shift_right_synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1653128169">
+  <File Type="PA-TCL" Name="shift.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="shift_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="shift_reports.tcl"/>
+  <File Type="RDS-RDS" Name="shift.vds"/>
+  <File Type="RDS-UTIL" Name="shift_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="shift_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="shift.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="shift_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="shift_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/shift_right">
+    <File Path="$PSRCDIR/sources_1/imports/ZCU104/shift_right/shift_right.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/hdl/ZCU104/shift_right/shift_right.v"/>
+        <Attr Name="ImportTime" Val="1525097490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="shift"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/ZCU104/shift_right/shift_right.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/shift_right">
+    <File Path="$PSRCDIR/sources_1/imports/ZCU104/shift_right/shift_right.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/hdl/ZCU104/shift_right/shift_right.v"/>
+        <Attr Name="ImportTime" Val="1525097490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="shift"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/ZCU104/shift_right/shift_right.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

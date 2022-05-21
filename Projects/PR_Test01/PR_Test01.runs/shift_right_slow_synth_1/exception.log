@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\UDRC\workspaces\vivado2019.1\PR_Test01\PR_Test01.runs\shift_right_slow_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
