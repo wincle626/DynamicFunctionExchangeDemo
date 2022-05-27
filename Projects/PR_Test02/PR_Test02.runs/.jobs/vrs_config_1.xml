@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mult_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/mult_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ila_mult_synth_1"/>
+	</Run>
+	<Run Id="add_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/add_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="c_addsub_0_synth_1"/>
+		<Parent Id="ila_add_synth_1"/>
+	</Run>
+	<Run Id="ila_mult_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/ila_mult_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_add_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/ila_add_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="ila_mult_synth_1"/>
+	</Run>
+	<Run Id="c_addsub_0_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/c_addsub_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vio_0_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/vio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/UDRC/workspaces/vivado2019.1/PR_Test02/PR_Test02.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="mult_synth_1"/>
+		<Parent Id="add_synth_1"/>
+		<Parent Id="ila_mult_synth_1"/>
+		<Parent Id="ila_add_synth_1"/>
+		<Parent Id="c_addsub_0_synth_1"/>
+		<Parent Id="vio_0_synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
