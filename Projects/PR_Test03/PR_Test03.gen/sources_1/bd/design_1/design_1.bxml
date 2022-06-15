@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="39">
+  <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1655289054"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1655289054"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1655289054"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1655289054"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="synth\design_1.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim\design_1.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="design_1_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="hw_handoff\design_1.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="design_1.bda">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="synth\design_1.hwdef">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim\design_1.protoinst">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+    </FileCollection>
+    <BlockContainerCollection>
+      <BlockContainer InstPath="/ram_blk0" IsPR="true" State="Generated">
+        <ActiveVariantSynth FileName="bd\ram_blk0_inst_0\ram_blk0_inst_0.bd"/>
+        <ActiveVariantSim FileName="bd\ram_blk0_inst_0\ram_blk0_inst_0.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd\ram_blk0_inst_0\ram_blk0_inst_0.bd" BDFileset="ram_blk0_inst_0" BDSourceFile="..\..\..\..\PR_Test03.srcs\sources_1\bd\ram_blk0\ram_blk0.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+          <BDFile BDFilePath="bd\ram_update0_inst_0\ram_update0_inst_0.bd" BDFileset="ram_update0_inst_0" BDSourceFile="..\..\..\..\PR_Test03.srcs\sources_1\bd\ram_update0\ram_update0.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+    </BlockContainerCollection>
+    <ReferenceCollection>
+      <ModuleReference TargetName="ram_blk0" Type="Block Design" SubInstancePath="design_1_ram_blk0_0">
+        <TopFile Name="..\..\..\..\PR_Test03.srcs\sources_1\bd\ram_blk0\ram_blk0.bd"/>
+        <FileCollection>
+          <File Name="..\..\..\..\PR_Test03.srcs\sources_1\bd\ram_blk0\ram_blk0.bd"/>
+        </FileCollection>
+      </ModuleReference>
+      <ModuleReference TargetName="ram_update0" Type="Block Design" SubInstancePath="design_1_ram_update0_0">
+        <TopFile Name="..\..\..\..\PR_Test03.srcs\sources_1\bd\ram_update0\ram_update0.bd"/>
+        <FileCollection>
+          <File Name="..\..\..\..\PR_Test03.srcs\sources_1\bd\ram_update0\ram_update0.bd"/>
+        </FileCollection>
+      </ModuleReference>
+    </ReferenceCollection>
+  </CompositeFile>
+</Root>

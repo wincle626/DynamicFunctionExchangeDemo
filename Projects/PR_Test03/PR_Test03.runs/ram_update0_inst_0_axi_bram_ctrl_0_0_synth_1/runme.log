@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log ram_update0_inst_0_axi_bram_ctrl_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram_update0_inst_0_axi_bram_ctrl_0_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source ram_update0_inst_0_axi_bram_ctrl_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1552.578 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ram_update0_inst_0_axi_bram_ctrl_0_0, cache-ID = fc9e892293232ad8.
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 15 11:33:42 2022...

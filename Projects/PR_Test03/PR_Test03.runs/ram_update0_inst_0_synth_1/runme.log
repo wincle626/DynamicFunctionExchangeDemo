@@ -1,0 +1,232 @@
+
+*** Running vivado
+    with args -log ram_update0_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram_update0_inst_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source ram_update0_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1560.645 ; gain = 0.000
+WARNING: [BD 41-2576] File 'e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0_sim_netlist.vhdl' referenced by design 'ram_update0_inst_0' could not be found.
+WARNING: [BD 41-2576] File 'e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0_sim_netlist.v' referenced by design 'ram_update0_inst_0' could not be found.
+WARNING: [BD 41-2576] File 'e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0_stub.vhdl' referenced by design 'ram_update0_inst_0' could not be found.
+WARNING: [BD 41-2576] File 'e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0_stub.v' referenced by design 'ram_update0_inst_0' could not be found.
+WARNING: [BD 41-2576] File 'e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0.dcp' referenced by design 'ram_update0_inst_0' could not be found.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top ram_update0_inst_0 -part xczu7ev-ffvc1156-2-e -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0.bd
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0.bd
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25588
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2112.609 ; gain = 254.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ram_update0_inst_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/synth/ram_update0_inst_0.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ram_update0_inst_0_axi_bram_ctrl_0_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.runs/ram_update0_inst_0_synth_1/.Xil/Vivado-21636-Alienware17R3/realtime/ram_update0_inst_0_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_update0_inst_0_axi_bram_ctrl_0_0' (1#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.runs/ram_update0_inst_0_synth_1/.Xil/Vivado-21636-Alienware17R3/realtime/ram_update0_inst_0_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ram_update0_inst_0_axi_bram_ctrl_0_bram_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.runs/ram_update0_inst_0_synth_1/.Xil/Vivado-21636-Alienware17R3/realtime/ram_update0_inst_0_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_update0_inst_0_axi_bram_ctrl_0_bram_0' (2#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.runs/ram_update0_inst_0_synth_1/.Xil/Vivado-21636-Alienware17R3/realtime/ram_update0_inst_0_axi_bram_ctrl_0_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'ram_update0_inst_0_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/synth/ram_update0_inst_0.v:210]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'ram_update0_inst_0_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/synth/ram_update0_inst_0.v:210]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'ram_update0_inst_0_axi_bram_ctrl_0_bram_0' has 16 connections declared, but only 14 given [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/synth/ram_update0_inst_0.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'ram_update0_inst_0' (3#1) [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/synth/ram_update0_inst_0.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2172.562 ; gain = 314.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2190.449 ; gain = 332.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2190.449 ; gain = 332.121
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2190.449 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ip/ram_update0_inst_0_axi_bram_ctrl_0_0/ram_update0_inst_0_axi_bram_ctrl_0_0/ram_blk0_inst_0_axi_bram_ctrl_0_0_in_context.xdc] for cell 'axi_bram_ctrl_0'
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2229.180 ; gain = 0.043
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ip/ram_update0_inst_0_axi_bram_ctrl_0_0/ram_update0_inst_0_axi_bram_ctrl_0_0/ram_blk0_inst_0_axi_bram_ctrl_0_0_in_context.xdc] for cell 'axi_bram_ctrl_0'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ip/ram_update0_inst_0_axi_bram_ctrl_0_bram_0/ram_update0_inst_0_axi_bram_ctrl_0_bram_0/ram_update0_inst_0_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ip/ram_update0_inst_0_axi_bram_ctrl_0_bram_0/ram_update0_inst_0_axi_bram_ctrl_0_bram_0/ram_update0_inst_0_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'axi_bram_ctrl_0_bram'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0_ooc.xdc]
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/bd/ram_update0_inst_0/ram_update0_inst_0_ooc.xdc]
+Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.runs/ram_update0_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.runs/ram_update0_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2229.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2229.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2229.180 ; gain = 370.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2229.180 ; gain = 370.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2229.180 ; gain = 370.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2229.180 ; gain = 370.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2229.180 ; gain = 370.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 2800.047 ; gain = 941.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 2800.047 ; gain = 941.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 2819.113 ; gain = 960.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------+----------+
+|      |BlackBox name                             |Instances |
++------+------------------------------------------+----------+
+|1     |ram_update0_inst_0_axi_bram_ctrl_0_0      |         1|
+|2     |ram_update0_inst_0_axi_bram_ctrl_0_bram_0 |         1|
++------+------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |ram_update0_inst_0_axi_bram_ctrl_0      |     1|
+|2     |ram_update0_inst_0_axi_bram_ctrl_0_bram |     1|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 2824.906 ; gain = 927.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2824.906 ; gain = 966.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2824.906 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2874.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 77ce0db4
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 2879.152 ; gain = 1318.508
+INFO: [Common 17-1381] The checkpoint 'E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.runs/ram_update0_inst_0_synth_1/ram_update0_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ram_update0_inst_0_utilization_synth.rpt -pb ram_update0_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 15 11:35:47 2022...
