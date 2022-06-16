@@ -1,0 +1,15 @@
+ set mypins [get_site_pins { \
+ SLICE_X51Y65/C_I \
+ SLICE_X53Y65/AX \
+ SLICE_X53Y65/CX \
+ SLICE_X54Y65/A_I \
+ SLICE_X54Y65/CX \
+ SLICE_X54Y65/EX \
+ SLICE_X55Y104/HX \
+ SLICE_X55Y104/H_I \
+ SLICE_X55Y65/CX \
+ SLICE_X55Y65/EX \
+ SLICE_X56Y104/F_I \
+ SLICE_X56Y65/A_I \
+}] 
+select_objects -add $mypins 

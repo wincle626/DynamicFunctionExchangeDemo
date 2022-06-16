@@ -1,0 +1,4 @@
+bram_blk0_axi_bram_ctrl_0_0.vhd,vhdl,xil_defaultlib,../../../bd/bram_blk0/ip/bram_blk0_axi_bram_ctrl_0_0/sim/bram_blk0_axi_bram_ctrl_0_0.vhd,
+bram_blk0_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/bram_blk0/ip/bram_blk0_blk_mem_gen_0_0/sim/bram_blk0_blk_mem_gen_0_0.v,
+bram_blk0.v,verilog,xil_defaultlib,../../../bd/bram_blk0/sim/bram_blk0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

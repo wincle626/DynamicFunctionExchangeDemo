@@ -1,0 +1,334 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jun 16 21:16:55 2022
+# Process ID: 1840
+# Current directory: E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/design_1_wrapper.vds
+# Journal file: E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1\vivado.jou
+# Running On: Alienware17R3, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 4, Host memory: 34184 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1549.910 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [Vivado 12-8448] Reference module source file e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/sources_1/bd/bram_blk0/bram_blk0.bd referred in sub-design design_1 is not added in project.
+WARNING: [Vivado 12-8448] Reference module source file e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/sources_1/bd/bram_update0/bram_update0.bd referred in sub-design design_1 is not added in project.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1549.910 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17520
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2138.891 ; gain = 257.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bram_blk0_inst_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/bram_blk0_inst_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bram_blk0_inst_0' (1#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/bram_blk0_inst_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dfx_axi_shutdown_man_0_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_dfx_axi_shutdown_man_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dfx_axi_shutdown_man_0_0' (2#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_dfx_axi_shutdown_man_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'shutdown_requested' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'in_shutdown' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'irq' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'wr_irq' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'rd_irq' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'wr_in_shutdown' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'rd_in_shutdown' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_dfx_axi_shutdown_man_0_0' is unconnected for instance 'dfx_axi_shutdown_man_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7023] instance 'dfx_axi_shutdown_man_0' of module 'design_1_dfx_axi_shutdown_man_0_0' has 103 connections declared, but only 90 given [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:183]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:426]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1231]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (3#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (4#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1578]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1578]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1578]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 56 connections declared, but only 53 given [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1578]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (5#1) [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1231]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1D3SAH3' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1634]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (6#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1D3SAH3' (7#1) [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1634]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:2024]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (8#1) [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:2024]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (9#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1148]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1148]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 82 connections declared, but only 80 given [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:1148]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (10#1) [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:426]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (11#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:373]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:373]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:373]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:373]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'design_1_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:373]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (12#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/.Xil/Vivado-1840-Alienware17R3/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (13#1) [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (14#1) [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2202.969 ; gain = 321.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2220.902 ; gain = 339.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2220.902 ; gain = 339.180
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2220.902 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/bram_blk0_inst_0_synth_1/bram_blk0_inst_0/bram_blk0_inst_0_in_context.xdc] for cell 'design_1_i/bram_blk0'
+Finished Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/bram_blk0_inst_0_synth_1/bram_blk0_inst_0/bram_blk0_inst_0_in_context.xdc] for cell 'design_1_i/bram_blk0'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2258.527 ; gain = 11.109
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_dfx_axi_shutdown_man_0_0/design_1_dfx_axi_shutdown_man_0_0/design_1_dfx_axi_shutdown_man_0_0_in_context.xdc] for cell 'design_1_i/dfx_axi_shutdown_man_0'
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_dfx_axi_shutdown_man_0_0/design_1_dfx_axi_shutdown_man_0_0/design_1_dfx_axi_shutdown_man_0_0_in_context.xdc] for cell 'design_1_i/dfx_axi_shutdown_man_0'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_ds'
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_ds'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Finished Parsing XDC File [e:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/hd_reconfig.xdc]
+Finished Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/hd_reconfig.xdc]
+Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/constrs_1/new/pblock.xdc]
+INFO: [Constraints 18-4422] SNAPPING_MODE is set so implementation will use the DERIVED_RANGES which may be different then the GRID_RANGES. [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/constrs_1/new/pblock.xdc:2]
+Finished Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/constrs_1/new/pblock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.srcs/constrs_1/new/pblock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2258.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2258.527 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2258.527 ; gain = 376.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2258.527 ; gain = 376.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i/bram_blk0. (constraint file  E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/hd_reconfig.xdc, line 4).
+Applied set_property HD.RECONFIGURABLE = true for design_1_i/bram_blk0. (constraint file  E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/hd_reconfig.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dfx_axi_shutdown_man_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/m00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/m01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2258.527 ; gain = 376.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2258.527 ; gain = 376.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2258.527 ; gain = 376.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 2837.062 ; gain = 955.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 2837.062 ; gain = 955.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 2857.098 ; gain = 975.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2863.871 ; gain = 982.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2863.871 ; gain = 982.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2863.871 ; gain = 982.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2863.871 ; gain = 982.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2863.871 ; gain = 982.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2863.871 ; gain = 982.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_xbar_0                   |         1|
+|2     |design_1_auto_ds_0                |         1|
+|3     |design_1_auto_pc_0                |         1|
+|4     |design_1_auto_ds_1                |         1|
+|5     |bram_blk0_inst_0                  |         1|
+|6     |design_1_dfx_axi_shutdown_man_0_0 |         1|
+|7     |design_1_rst_ps8_0_99M_0          |         1|
+|8     |design_1_zynq_ultra_ps_e_0_0      |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |bram_blk0_inst                  |     1|
+|2     |design_1_auto_ds                |     2|
+|4     |design_1_auto_pc                |     1|
+|5     |design_1_dfx_axi_shutdown_man_0 |     1|
+|6     |design_1_rst_ps8_0_99M          |     1|
+|7     |design_1_xbar                   |     1|
+|8     |design_1_zynq_ultra_ps_e_0      |     1|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2863.871 ; gain = 982.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 2863.871 ; gain = 944.523
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 2863.871 ; gain = 982.148
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2863.871 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2915.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: c9b2adf7
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:32 . Memory (MB): peak = 2920.332 ; gain = 1370.422
+INFO: [Common 17-1381] The checkpoint 'E:/UDRC_HW/workspaces/vivado2021.2/PR_Test04/PR_Test04.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 16 21:18:54 2022...

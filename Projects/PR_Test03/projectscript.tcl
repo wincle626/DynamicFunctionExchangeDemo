@@ -40,6 +40,7 @@ set_property name ram_blk0 $new_cell
 endgroup
 update_compile_order -fileset sources_1
 
+open_bd_design {E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.srcs/sources_1/bd/design_1/design_1.bd}
 set_property CONFIG.ENABLE_DFX 1 [get_bd_cells /ram_blk0]
 
 validate_bd_design
@@ -73,9 +74,6 @@ assign_bd_address
 set_property offset 0xA0000000 [get_bd_addr_segs {S_AXI/SEG_axi_bram_ctrl_0_Mem0}]
 validate_bd_design
 
-make_wrapper -files [get_files E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.srcs/sources_1/bd/design_1/design_1.bd] -top
-add_files -norecurse e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
-update_compile_order -fileset sources_1
 generate_target all [get_files  E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.srcs/sources_1/bd/design_1/design_1.bd]
 catch { config_ip_cache -export [get_ips -all design_1_zynq_ultra_ps_e_0_0] }
 catch { config_ip_cache -export [get_ips -all design_1_axi_smc_0] }
@@ -85,6 +83,9 @@ create_ip_run [get_files -of_objects [get_fileset sources_1] E:/UDRC_HW/workspac
 launch_runs design_1_zynq_ultra_ps_e_0_0_synth_1 design_1_axi_smc_0_synth_1 design_1_rst_ps8_0_99M_0_synth_1 -jobs 4
 export_simulation -of_objects [get_files E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.srcs/sources_1/bd/design_1/design_1.bd] -directory E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.ip_user_files/sim_scripts -ip_user_files_dir E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.ip_user_files -ipstatic_source_dir E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.cache/compile_simlib/modelsim} {questa=E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.cache/compile_simlib/questa} {riviera=E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.cache/compile_simlib/riviera} {activehdl=E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
 
+make_wrapper -files [get_files E:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse e:/UDRC_HW/workspaces/vivado2021.2/PR_Test03/PR_Test03.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
 
 create_pr_configuration -name config_nocoe -partitions [list design_1_i/ram_blk0:ram_blk0_inst_0 ]
 create_pr_configuration -name config_coe -partitions [list design_1_i/ram_blk0:ram_update0_inst_0 ]

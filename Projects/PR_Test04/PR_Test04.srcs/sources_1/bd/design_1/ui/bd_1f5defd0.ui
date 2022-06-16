@@ -1,0 +1,28 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.19518",
+   "Default View_TopLeft":"797,-34",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 280 -y 90 -defaultsOSRD
+preplace inst dfx_axi_shutdown_man_0 -pg 1 -lvl 3 -x 1080 -y 170 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 750 -y 150 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 280 -y 290 -defaultsOSRD
+preplace inst bram_blk0 -pg 1 -lvl 4 -x 1390 -y 120 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 -30 180 590 10 900 30 1240J
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 -20 190 580
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 3 600 290 910 40 1230J
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 70
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 N 140
+preplace netloc ps8_0_axi_periph_M01_AXI 1 2 1 N 160
+preplace netloc dfx_axi_shutdown_man_0_M_AXI 1 3 1 N 100
+levelinfo -pg 1 -50 280 750 1080 1390 1670 1810
+pagesize -pg 1 -db -bbox -sgen -50 0 1810 540
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_clkrst_cnt":"2",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}
