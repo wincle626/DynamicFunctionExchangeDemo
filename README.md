@@ -8,7 +8,7 @@ For the DFX of IP integrator based design, it uses Vivado 2021.2.
 
 https://www.xilinx.com/support/documentation-navigation/design-hubs/dh0017-vivado-partial-reconfiguration-hub.html
 
-### www.adiuvoengineering.com:
+### Adiuvoengineering:
 
 https://www.adiuvoengineering.com/post/microzed-chronicles-partial-configuration-introduction
 
